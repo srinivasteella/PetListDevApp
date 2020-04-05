@@ -50,7 +50,7 @@ The overall objective of the applications is to make an API that access third pa
 >   1. Please clone or download the repository from [![github](https://img.shields.io/badge/git-hub-blue.svg?style=plastic)](https://github.com/srinivasteella/PetListDevApp) 
 
 >   
-##### To start Client and Server
+##### (a) To start Client and Server
    
 >   1. Open solution in **Visual Studio 2019** 
 >   2. Right click on the solution and select `Properties` or Select solution and press `ALT+Enter`
@@ -69,7 +69,7 @@ The overall objective of the applications is to make an API that access third pa
 
 ![Client](https://github.com/srinivasteella/PetListDevApp/blob/master/Client.PNG "Angular")
 
-##### (c) To run the unit test project
+##### (b) To run the unit test project
 >   1. Open solution in **Visual Studio 2019**
 >   
 >   2. Select Test Project -> Run Tests
