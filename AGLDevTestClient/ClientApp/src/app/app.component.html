@@ -1,0 +1,41 @@
+<div class="toolbar" role="banner">
+  <img
+    width="40"
+    alt="Angular Logo"
+    src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg=="
+  />
+  <span>AGL DEV TEST CLIENT</span>
+    <div class="spacer"></div>  
+</div>
+
+<div class="content">
+  <span *ngIf = "errormessage$ | async as errormessage">
+    <div class="content">
+      <h3>{{errormessage}}</h3>
+    </div>
+  </span>
+  <span *ngIf = "!(errormessage$ | async)">
+    <div class="form-inline" *ngIf = "petTypes$ | async as petTypes">
+      <label for="admin-picker" class="label-admin">Pet Types : </label>
+      <select (change) ="onSelected($event.target.value)">
+        <option value="" disabled>--Select--</option>
+        <option *ngFor="let type of petTypes">{{type}}</option>
+      </select>
+    </div>
+    <div *ngIf = "petsByOwnerGender != null">
+      <h6 *ngFor="let element of petsByOwnerGender">
+        {{element.gender}}
+        <span *ngIf = "element.petnames.length == 0">
+          <br/>
+          <font color="red">No Pets</font>
+        </span>
+        <ul *ngFor="let petname of element.petnames">
+          <li >{{petname}}</li>
+        </ul>
+      </h6>
+    </div>
+  </span>
+ 
+</div>
+
+<router-outlet></router-outlet>
