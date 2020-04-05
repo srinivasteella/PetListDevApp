@@ -30,11 +30,7 @@ namespace AGLDevTestAPI.Service
         {
             List<PetNamesbyOwnerGender> ListofPetsByOwnerGender = new List<PetNamesbyOwnerGender>();
             try
-            {
-                //if (Enum.TryParse(petType, true, out enumType))
-                //{
-
-                //}
+            {               
                 var response = await _petProxy.GetAsync(_appSettings.BaseUrl);
                 List<PetModel> petList = JsonData.DeserializeObject<List<PetModel>>(response);
                 petList.Where(pets => pets.pets != null).Select(p => new PetNamesbyOwnerGender
@@ -52,7 +48,7 @@ namespace AGLDevTestAPI.Service
             }
             catch(Exception ex)
             {
-                //log
+                //catch/throw/log
                 return null;         
             }
 
@@ -69,7 +65,7 @@ namespace AGLDevTestAPI.Service
             }
             catch
             {
-                //shout/catch/throw/log
+                //catch/throw/log
                 return null;
             }
         }

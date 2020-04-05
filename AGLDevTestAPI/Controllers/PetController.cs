@@ -38,7 +38,7 @@ namespace AGLDevTestAPI.Controllers
             }
             catch (AggregateException)
             {
-                return BadRequest();//shout/catch/throw/log
+                return BadRequest();//catch/throw/log
             }
 
             return Ok(petTypes);
@@ -67,7 +67,7 @@ namespace AGLDevTestAPI.Controllers
             }
             catch (AggregateException)
             {
-                return BadRequest();//shout/catch/throw/log
+                return BadRequest();//catch/throw/log
             }
 
             return Ok(petlistByOwnerGender);
