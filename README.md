@@ -22,7 +22,7 @@ The repository consists of projects as below:
 
 ### Summary
 
-The overall objective of the applications is to make an API that access third party API to fetch list of pets and filter by pet type and group by owner gender
+The overall objective of the applications is to make an API that access third party API to fetch the list of pets, filter by pet type and group by owner gender
 ```
 >	Get Pet Types
 >	Get List of Pets by Owner Gender
