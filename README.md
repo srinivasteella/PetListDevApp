@@ -22,11 +22,11 @@ The repository consists of projects as below:
 
 ### Summary
 
-The overall objective of the applications is to make an API that access third party API to fetch the list of pets, filter by pet type and group by owner gender
+The overall objective of the applications is to make an API that access third party API to fetch the list of pets, filter by pet type and group by owner gender. Below are the list of end points
 ```
 >	Get Pet Types
 >	Get List of Pets by Owner Gender
->	Unit test
+
 ```
 
 ### Setup detail
@@ -50,7 +50,7 @@ The overall objective of the applications is to make an API that access third pa
 >   1. Please clone or download the repository from [![github](https://img.shields.io/badge/git-hub-blue.svg?style=plastic)](https://github.com/srinivasteella/PetListDevApp) 
 
 >   
-##### (a) To start the backend webapi service
+##### To start Client and Server
    
 >   1. Open solution in **Visual Studio 2019** 
 >   2. Right click on the solution and select `Properties` or Select solution and press `ALT+Enter`
