@@ -8,7 +8,7 @@
 ---------------------------------------
 
 
-## Repository codebase
+## Repository code base
 
 The repository consists of projects as below:
 
